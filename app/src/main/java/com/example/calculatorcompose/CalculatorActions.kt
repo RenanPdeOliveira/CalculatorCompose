@@ -1,7 +1,7 @@
 package com.example.calculatorcompose
 
 sealed class CalculatorActions {
-    data class Number(val number: String): CalculatorActions()
+    data class Number(val number: Int): CalculatorActions()
     object Clear: CalculatorActions()
     object Back: CalculatorActions()
     object Decimal: CalculatorActions()
