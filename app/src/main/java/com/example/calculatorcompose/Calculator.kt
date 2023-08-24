@@ -33,6 +33,7 @@ fun Calculator(
     Box(
         modifier = modifier
             .fillMaxSize()
+            .padding(12.dp)
     ) {
         Column(
             modifier = Modifier
@@ -41,13 +42,13 @@ fun Calculator(
             verticalArrangement = Arrangement.spacedBy(buttonSpace)
         ) {
             Text(
-                text = state.number1 + (state.operation ?: "") + state.number2,
+                text = state.number1 + (state.operation?.symbol ?: "") + state.number2,
                 textAlign = TextAlign.End,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 32.dp),
+                    .padding(vertical = 18.dp),
                 fontWeight = FontWeight.Light,
-                fontSize = 80.sp,
+                fontSize = 72.sp,
                 color = Color.White,
                 maxLines = 2
             )
@@ -66,8 +67,7 @@ fun Calculator(
                         onAction(CalculatorActions.Clear)
                     }
                 )
-                CalculatorButton(
-                    symbol = "Del",
+                BackSpaceButton(
                     modifier = Modifier
                         .background(LightGray)
                         .aspectRatio(1f)
