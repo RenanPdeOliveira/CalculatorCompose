@@ -3,7 +3,7 @@ Calculator Compose is my first project built with Jetpack Compose and Kotlin.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/results/Screenshot_calculator_compose_1.png" width="260">&emsp;<img src="/results/Screenshot_calculator_compose_1.png" width="260">&emsp;<img src="/results/Screenshot_calculator_compose_1.png" width="260">
+<img src="/results/Screenshot_calculator_compose_1.png" width="260">&emsp;<img src="/results/Screenshot_calculator_compose_2.png" width="260">&emsp;<img src="/results/Screenshot_calculator_compose_3.png" width="260">
 
 ## Technologies
 * Kotlin
